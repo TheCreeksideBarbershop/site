@@ -1,0 +1,164 @@
+* {
+  transition: all 0.1s ease-in-out;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #1E2124;
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+  height: 1px;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav h1,
+navm h1 {
+  text-align: center;
+  font-size: 40px;
+  z-index: 99;
+}
+
+nav img,
+navm img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+nav:after,
+navm:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+navm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs .tab.active {
+  border-top: 2px solid #fff;
+}
+
+.module {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+}
+
+.content {
+  padding: 5px;
+  min-width: 320px;
+  max-width: 500px;
+  background: #131517;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px black;
+  margin: 20px 0;
+}
+
+.content-m-1 {
+  position: absolute;
+  top: 0px;
+  left: 10%;
+  padding: 5px;
+  width: 500px;
+  background: #131517;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px black;
+  margin: 20px 0;
+}
+
+.content-m-2 {
+  position: absolute;
+  top: 0px;
+  right: 10%;
+  padding: 5px;
+  width: 500px;
+  background: #131517;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px black;
+  margin: 20px 0;
+}
+
+.content-m-3 {
+  position: absolute;
+  top: 250px;
+  right: 10%;
+  padding: 5px;
+  width: 500px;
+  background: #131517;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px black;
+  margin: 20px 0;
+}
+
+.center {
+  min-width: 320px;
+  max-width: 500px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+a {
+  color: #bb905d
+}
+
+hr {
+  border: 1px solid #ffffff;
+}
+
+::-moz-selection {
+  color: white;
+  background: #bb905d;
+}
+
+::selection {
+  color: white;
+  background: #bb905d
+}
+
+.abt-img {
+  width: 100%;
+  border-radius: 10px;
+}
